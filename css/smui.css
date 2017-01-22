@@ -75,9 +75,47 @@ body {
 }
 .title span{
 	float: right;	
+	color: #bbb;
+}
+.wrap,
+.comment,
+.form,
+.avatar-wrap2,
+.avatar-wrap{
+	position: relative;
+	background-color: #fff !important;
+}
+.wrap:before,
+.wrap:after,
+.comment:before,
+.form:before,
+.avatar-wrap2:after,
+.avatar-wrap2:before,
+.avatar-wrap:after,
+.avatar-wrap:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: #ddd;
+}
+.wrap:after,
+.avatar-wrap2:after,
+.avatar-wrap:after{
+	content: "";
+	top: auto;
+	bottom: 0;
 }
 
+.wrap{
+	padding: 10px 0;
+}
 
+.radio-checkbox{
+	padding-left: 30px;
+}
 
 
 

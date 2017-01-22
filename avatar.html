@@ -4,11 +4,69 @@
 	* 触发键:2
 -->
 
-<!--****************css****************-->
 <style>
-
+/**************头像**************/
+/*居中**/
+.avatar-wrap{
+	height: 150px;
+	padding-top: 15px;
+	text-align: center;
+	color: #000;
+	background-color: #fff;
+}
+.avatar-wrap .avatar{
+	display: block;
+  width: 90px;
+  height: 90px;
+	margin: 0 auto;
+	border: 1px solid  #fff;
+	background-color: #eee;
+	border-radius: 50%;
+}
+.avatar-wrap span{
+	display: block;
+	margin-top: 5px;
+}
+/*居左**/
+.avatar-wrap2{
+	padding: 5px;
+	background-color: #fff;
+}
+.avatar-wrap2 .avatar{
+	display: inline-block;
+  width: 48px;
+  height: 48px;
+	border-radius: 50%;
+	background-color: #eee;
+	vertical-align:middle;
+}
+.avatar-wrap2 span{
+	display: inline-block;
+	padding-top: 3px;
+	padding-left: 3px;
+	margin-top: -2px;
+	vertical-align:middle;
+}
+.avatar-wrap2 span em{
+	display: block;
+	color: #aaa;
+	font-size: 14px;
+	font-style: normal;
+}
 </style>
 
-<!--****************html****************-->
-<h1 class="title">居中---#2a</h1>
+<!----------------居中------------------>
+
+<h1 class="title">居中<span>#2a</span></h1>
+<div class="avatar-wrap">
+  <i class="avatar" style="background-image:url(images/avatar.png);"></i>
+  <span>昵称</span>
+</div>
+
+<!----------------居左------------------>
+<h1 class="title">居左<span>#2b</span></h1>
+<div class="avatar-wrap2">
+	<i class="avatar" style="background-image:url(images/avatar.png);"></i>
+	<span>昵称<em>明天会更好</em></span>
+</div>
 

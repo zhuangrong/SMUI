@@ -29,12 +29,6 @@ $(function(){
 	display: flex;
 	padding: 0 0 0 15px;
 }
-.list ul li i.icon-list{
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	margin:10px 10px 0 0;
-}
 .list ul li div,
 .list ul li a{
 	position: relative;
@@ -50,7 +44,6 @@ $(function(){
 	background-repeat: no-repeat !important;
 	background-position: right center !important;
 	-webkit-background-size: 16px !important;
-	background-size: 16px !important;
 	-webkit-background-origin: content-box;
 	background-origin: content-box;
 }
@@ -63,31 +56,68 @@ $(function(){
 	right: 30px;
 	color: #aaa;
 }
-.list ul li .last-none{
+.list ul li:nth-last-child(1) a{
 	border-bottom: none;
-}
-.list ul li i.icon-list.icon01{
-	background-image: url(images/icon01.png)
 }
 
 </style>
 </head>
 <body>
+<!--***********************列表#1 | 头像#2 ***********************-->
+<h1 class="title">设置</h1>
+<div class="list">
+	<ul>
+		<li>
+			<a href="frame.html?url=list">列表 <label class="tip">#1</label></a>
+		</li>
+		<li>
+			<a href="frame.html?url=avatar">头像 <label class="tip">#2</label></a>
+		</li>
+	</ul>
+</div>
+<!--***********************表单#3***********************-->
 <h1 class="title">表单</h1>
 <div class="list">
 	<ul>
 		<li>
-			<i class="icon-list icon01"></i>
-			<a href="frame.html?url=avatar">头像</a>
+			<a href="frame.html?url=form-input">输入框 <label class="tip">#3</label></a>
 		</li>
 		<li>
-			<i class="icon-list icon01"></i>
-			<a href="frame.html?url=list">
-				列表 
-				<label class="tip">#1</label>
-			</a>
+			<a href="frame.html?url=form-button">按钮 <label class="tip">#4</label></a>
+		</li>
+		<li class="last-none">
+			<a href="frame.html?url=form-radio-checkbox">单选框，多选框<label class="tip">#5</label></a>
+		</li>
+		<li class="last-none">
+			<a href="frame.html?url=form-d">单选项列表，多选项列表<label class="tip">#6</label></a>
 		</li>
 	</ul>
 </div>
+<!--***********************评论***********************-->
+<h1 class="title">评论</h1>
+<div class="list">
+	<ul>
+		<li>
+			<a href="frame.html?url=comment">评论 <label class="tip">#7</label></a>
+		</li>		
+	</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
