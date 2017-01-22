@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="css/smui.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<title>snippet</title>
+<script>
+$(function(){
+	
+})
+</script>
+<style>
+/**************组件-列表**************/
+.list{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+}
+.list ul{
+	
+}
+.list ul li{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 0 0 0 15px;
+}
+.list ul li i.icon-list{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin:10px 10px 0 0;
+}
+.list ul li div,
+.list ul li a{
+	position: relative;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	display: block;
+	padding: 10px 10px 10px 0;
+	border-bottom: 1px solid  #ddd;
+	overflow: hidden;
+	color: inherit;
+	background-image: url(images/item-arrow.png);
+	background-repeat: no-repeat !important;
+	background-position: right center !important;
+	-webkit-background-size: 16px !important;
+	background-size: 16px !important;
+	-webkit-background-origin: content-box;
+	background-origin: content-box;
+}
+.list ul li:active{
+	background-color: #eee;
+}
+.list ul li a .tip{
+	position: absolute;
+	top: 12px;
+	right: 30px;
+	color: #aaa;
+}
+.list ul li .last-none{
+	border-bottom: none;
+}
+.list ul li i.icon-list.icon01{
+	background-image: url(images/icon01.png)
+}
+
+</style>
+</head>
+<body>
+<h1 class="title">表单</h1>
+<div class="list">
+	<ul>
+		<li>
+			<i class="icon-list icon01"></i>
+			<a href="frame.html?url=avatar">头像</a>
+		</li>
+		<li>
+			<i class="icon-list icon01"></i>
+			<a href="frame.html?url=list">
+				列表 
+				<label class="tip">#1</label>
+			</a>
+		</li>
+	</ul>
+</div>
+</body>
+</html>
