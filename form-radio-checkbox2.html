@@ -1,10 +1,33 @@
 <!--
   * form-radio-checkbox.html
-	* 表单-单选框，复选框
-	* 触发键:5
+	* 表单-单选项列表，复选项列表
+	* 触发键:6
 -->
 
 <style>
+/*单选项列表*/
+.radio-list > label{
+	display: block;
+	width: 100%;
+	padding: 5px 10px 10px;
+	border-bottom: 1px solid #eee;
+}
+.radio-list > label input[type=radio]{
+	float: right;
+	margin-right: 20px;
+}
+/*复选项列表*/
+.checkbox-list > label{
+	display: block;
+	width: 100%;
+	padding: 5px 10px 10px;
+	border-bottom: 1px solid #eee;
+}
+.checkbox-list > label input[type=checkbox]{
+	float: right;
+	margin-right: 20px;
+}
+	
 /*单选框*/
 .radio{
 	width: 22px;
@@ -16,7 +39,7 @@
 }
 .radio:checked{
 	background-position: 0 -22px;
-	}
+}
 /*多选框*/
 .checkbox{
 	width: 22px;
@@ -30,16 +53,16 @@
 	background-position: 0 -22px;
 }
 </style>
-<h1 class="title">单选框<span>#5a</span></h1>
-<div class="wrap radio-checkbox">
-	<!----------------------单选框#5a-------------------->
+<h1 class="title">单选项列表<span>#6a</span></h1>
+<!----------------------单选项列表#6a-------------------->
+<div class="wrap radio-list">
 	<label><input class="radio" type="radio" name="rad">male</label>
 	<label><input class="radio" type="radio" name="rad">female</label>
 </div>
 
-<h1 class="title">多选框<span>#5b</span></h1>
-<div class="wrap radio-checkbox">
-	<!----------------------多选框#5b-------------------->
+<h1 class="title">复选项列表<span>#6b</span></h1>
+<!----------------------复选项列表#6b-------------------->
+<div class="wrap checkbox-list">
 	<label><input type="checkbox" name="" class="checkbox" checked>option1</label>
 	<label><input type="checkbox" name="" class="checkbox">option2</label>
 </div>

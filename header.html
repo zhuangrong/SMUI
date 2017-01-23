@@ -1,0 +1,50 @@
+<!--
+  * header.html
+	* 标题栏
+	* 触发键:8
+-->
+
+<style>
+/*标题栏*/
+.header{
+	height: 44px;
+	line-height: 44px;
+	background-color: #D70000;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	position: relative;
+}
+.header a{
+	display: block;
+	width: 44px;
+	height: 44px;
+}
+.header a:first-child{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.header a:last-child{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.header .icon-back{
+	background-image: url(images/icon-back.png);
+}
+
+.header .icon-user{
+	background-image: url(images/icon-man.png);
+}
+</style>
+
+
+<!----------------------标题栏#8-------------------->
+<div class="header">
+	<a class="icon-back" href="javascrit:"></a>
+	标题
+	<a class="icon-user" href="javascrit:"></a>
+</div>
+
+

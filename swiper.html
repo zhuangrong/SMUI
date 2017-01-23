@@ -1,0 +1,50 @@
+<!--
+  * swiper.html
+	* 幻灯片
+	* 触发键:11
+-->
+<script src="js/swiper.min.js"></script> 
+<link rel="stylesheet" href="css/swiper.min.css" />  
+<script>
+$(function(){
+	/*Siwper*/
+	var swiper01 = new Swiper('#slide01', {
+										pagination: '.swiper-pagination',
+										autoplay:2000
+									});
+
+});
+</script>
+<style>
+/*幻灯片*/
+.swiper01{
+	height: 140px;
+	background-color: #aaa;
+}
+.swiper01 .swiper-pagination-bullet{
+	width:5px !important;
+	height:5px !important;
+	background:#fff !important;
+	margin:0 3px !important;
+}
+.swiper01 .swiper-pagination-bullet-active {
+	background:rgba(255,255,255,0.6) !important;
+	}
+</style>
+
+
+<!----------------------幻灯片#11-------------------->
+<section class="swiper-container swiper01" id="slide01">
+	<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="images/banner01.png">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/banner01.png">
+			</div>
+	</div>
+	<!-- Add Pagination -->
+	<div class="swiper-pagination"></div>
+</section>
+
+

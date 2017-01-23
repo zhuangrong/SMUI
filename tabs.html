@@ -1,0 +1,61 @@
+<!--
+  * tabs.html
+	* 选项卡
+	* 触发键:10
+-->
+
+<style>
+/*选项卡tabs*/
+.tabs ul{
+	display: -webkit-box; 
+	display: -webkit-flex;
+	display: flex;
+}
+.tabs li{
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+  flex:1;
+	width:0%;/*必须有*/
+	height:40px;
+	line-height: 40px;
+	text-align:center;
+	color: #f3f3f3;
+	background-color: #D70000;
+}
+.tabs li.curr{
+	color: #fff;	
+	border-bottom: 2px solid  #fe0;
+}
+div[class*="tab-box"] > div:not(:first-child){
+	display:none
+	}
+</style>
+
+<!----------------------选项卡#10-------------------->
+<div class="tabs" id="tabs">
+	<ul>
+		<li class="curr">今天</li>
+		<li>明天</li>
+		<li>后天</li>
+	</ul>
+</div>
+<div class="tab-box1">
+	<div>内容：今天</div>
+	<div>内容：明天</div>
+	<div>内容：后天</div>
+</div>
+
+<script>
+/*tabs切换组件*/
+$.TabChange = function(obj,num){
+	$("li","#" + obj).each(function(index){
+			$(this).click(function(i){
+			 	$("div.tab-box" + num + " > div").eq(index).show().siblings().hide();
+				$(this).addClass("curr").siblings().removeClass("curr");
+			})													
+	})
+}
+$(function(){
+	$.TabChange("tabs",1)
+})
+</script>

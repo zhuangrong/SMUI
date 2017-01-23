@@ -11,8 +11,7 @@
 <script>
 $(function(){
 	//获取url中的随机值
-	var url = $.getUrlParam('url');
-	
+	var url = $.getUrlParam('url');	
 	$.ajax({
 		url: url + ".html",
 		success:function(res){
@@ -22,8 +21,7 @@ $(function(){
 })
 //自定义jquery组件获取方式
 ;(function($){
-		$.getUrlParam = function(name)
-		{
+		$.getUrlParam = function(name){
 			var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
 			var r = window.location.search.substr(1).match(reg);
 			if (r!=null) return unescape(r[2]); return null;
@@ -33,5 +31,14 @@ $(function(){
 </head>
 <body>
 <div id="component"></div>
+<!--
+  * 组件列表
+  * tabs 1、头部选项卡（可与头部标题栏融合-相同颜色）   2、底部导航
+  * swiper 幻灯片
+  * toast  轻提示 
+  * iscroll 滚动
+  * 搜索栏 
+  * 侧滑   panel
+-->
 </body>
 </html>
