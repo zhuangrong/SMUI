@@ -1,0 +1,110 @@
+<!--
+  * actionSheet.html
+	* 底部弹出菜单
+	* 触发键:16
+-->
+<script>
+$(function(){
+	//底部弹出菜单
+	$(".btn2").on("click",function(){		 
+		 $(".mask").show().css("opacity",1)
+		 $(".actionSheet").addClass('show')		 
+	})
+	
+	//点击遮罩层隐藏
+	$(".mask, .action-cancel").on("click",function(e){
+			e.stopPropagation()
+			$(".mask").hide().css("opacity",0)
+		  $(".actionSheet").removeClass('show')			
+	})
+	
+})
+</script>
+<style>
+body{
+	background-color: #fff;
+}
+a.btn2{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+  margin:30px 30px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #f30;
+}	
+
+/*底部弹出菜单*/
+.mask {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	display: none;
+	-webkit-transition: opacity .2s;
+}
+.actionSheet{
+	position: fixed;
+	z-index: 9999;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(100%);
+	-webkit-transition: -webkit-transform .3s;
+	background-color: #ccc;
+}
+.actionSheet li{
+	padding: 12px 0;
+	text-align: center;
+	border-bottom: 1px solid  #ddd;	
+	background-color: #fff;
+}
+.actionSheet a:active,
+.actionSheet li:active{
+	background-color: #ccc;
+}
+.actionSheet a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+  margin:5px 0;
+  text-align: center;
+	text-decoration: none;
+	color: inherit;
+	background-color: #fff;
+}
+.actionSheet.show{
+	-webkit-transform: translateY(0);
+	}
+	
+</style>
+
+<a href="javascript:;" class="btn2">底部弹出菜单</a>
+
+<!----------------------底部弹出菜单#16-------------------->
+<div>
+	<div class="mask"></div>
+	<div class="actionSheet">
+		<ul>
+			<li>动作一</li>
+			<li>动作二</li>
+			<li>动作三</li>
+		</ul>
+		<a href="javascript:;" class="action-cancel">取消</a>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+

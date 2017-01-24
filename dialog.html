@@ -1,0 +1,115 @@
+<!--
+  * dialog.html
+	* 对话框
+	* 触发键:15
+-->
+<script>
+$(function(){
+	//对话框
+	$(".btn2").on("click",function(){
+		 $(".dialog-wrap").show().css("opacity",1)	
+	})
+	
+	//点击遮罩层隐藏
+	$(".mask").on("click",function(e){
+			e.stopPropagation()
+			$(".dialog-wrap").css("opacity",0).hide()
+	})
+	
+})
+</script>
+<style>
+body{
+	background-color: #fff;
+}
+a.btn2{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+  margin:30px 30px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #f30;
+}	
+.btn{
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	padding:0 15px;
+	margin:0 auto;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;	
+	overflow: hidden;
+	color: #fff;
+	background-color: #f60;
+}
+	
+	
+/*对话框*/
+.dialog-wrap{	
+	-webkit-transition: opacity .3s;
+}
+.mask {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+.dialog {
+	position: fixed;
+	z-index: 9999;
+	width: 80%;
+	max-width: 300px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;		
+}
+.dialog .dialog-header{
+	padding: 20px 10px 10px;
+	font-size: 18px;
+}
+.dialog .dialog-body{
+	padding: 0 20px 20px;
+	text-align: left;
+	min-height: 140px;
+	font-size: 15px;
+	line-height: 1.3;
+	color: #999;
+}	
+.dialog .dialog-footer{
+	text-align: center;
+	min-height: 48px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+	
+</style>
+
+<a href="javascript:;" class="btn2">弹出对话框</a>
+
+<!----------------------对话框#15-------------------->
+<div id="dialog" class="dialog-wrap" style="opacity: 0; display: none">
+	<div class="mask"></div>
+	<div class="dialog">
+		<div class="dialog-header">标题</div>
+		<div class="dialog-body">对话框内容区域对话框内容区域对话框内容区域对话框内容区域</div>
+		<div class="dialog-footer">
+			<button class="btn">按钮1</button>
+			<button class="btn">按钮2</button>
+		</div>
+	</div>
+</div>
+
+
