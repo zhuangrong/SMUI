@@ -78,7 +78,6 @@ body {
 	color: #bbb;
 }
 .wrap,
-.comment,
 .form,
 .avatar-wrap2,
 .avatar-wrap{
@@ -87,7 +86,6 @@ body {
 }
 .wrap:before,
 .wrap:after,
-.comment:before,
 .form:before,
 .avatar-wrap2:after,
 .avatar-wrap2:before,
@@ -121,7 +119,15 @@ body {
 	padding-top: 30px;
 }
 
-
+#wrapper{
+	top: 50px;
+	left: 50px;
+	padding: 10px;
+}
+#scroller li{
+	padding: 5px 10px;
+	border-bottom: 1px solid  #ddd;	
+}
 
 
 

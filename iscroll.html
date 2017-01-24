@@ -1,0 +1,82 @@
+<!--
+  * iscroll.html
+	* 滚动条
+	* 触发键:12
+	*
+	* 注释： 如果是点击后才出现滚动用下面方法
+          setTimeout(function () {
+              myScroll.refresh();
+					}, 0)
+					
+					body标签 加上 onload="loaded()"
+	*
+-->
+
+<script src="js/iscroll.js"></script>
+<script>
+$(function(){
+	window.onload = loaded();
+	
+})
+//滚动iscroll
+var myScroll;
+function loaded () {
+	myScroll = new IScroll('#wrapper',{
+			tap:true,
+			click:false, 
+	  	scrollbars: true,
+		  shrinkScrollbars: 'scale', //触底或触顶滚动条伸缩
+			fadeScrollbars: true,
+			preventDefaultException:{tagName:/.*/}//解除默认事件锁定，调用tab，click等事件,不支持swipeleft
+		});
+}
+</script>
+<style>
+/*滚动iscroll*/
+#wrapper{
+	position:absolute;
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	border-radius: 10px;
+	background-color: #fff;
+	border: 1px solid  #ccc;
+}
+#scroller {
+	position: absolute;
+	left:5px;
+	right:5px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	padding-bottom: 20px;
+}
+</style>
+
+
+<!----------------------滚动条#12-------------------->
+<div id="wrapper">
+	<ul id="scroller">
+		<li>全部活动</li>
+		<li>亲子旅游</li>
+		<li>亲子周边游</li>
+		<li>兴趣班</li>
+		<li>夏令营</li>
+		<li>教学</li>
+		<li>团队定制</li>
+		<li>全部活动</li>
+		<li>亲子旅游</li>
+		<li>亲子周边游</li>
+		<li>兴趣班</li>
+		<li>夏令营</li>
+		<li>教学</li>
+		<li>团队定制</li>
+	</ul>
+</div>
+
+
