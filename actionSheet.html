@@ -7,14 +7,14 @@
 $(function(){
 	//底部弹出菜单
 	$(".btn2").on("click",function(){		 
-		 $(".mask").show().css("opacity",1)
+		 $(".mask").fadeIn(200)
 		 $(".actionSheet").addClass('show')		 
 	})
 	
 	//点击遮罩层隐藏
 	$(".mask, .action-cancel").on("click",function(e){
 			e.stopPropagation()
-			$(".mask").hide().css("opacity",0)
+			$(".mask").fadeOut(300)
 		  $(".actionSheet").removeClass('show')			
 	})
 	
@@ -44,9 +44,7 @@ a.btn2{
 	left: 0;
 	bottom: 0;
 	background: rgba(0, 0, 0, 0.6);
-	opacity: 0;
 	display: none;
-	-webkit-transition: opacity .2s;
 }
 .actionSheet{
 	position: fixed;
@@ -80,7 +78,7 @@ a.btn2{
 }
 .actionSheet.show{
 	-webkit-transform: translateY(0);
-	}
+}
 	
 </style>
 

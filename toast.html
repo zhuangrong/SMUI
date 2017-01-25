@@ -5,11 +5,14 @@
 -->
 <script>
 $(function(){
+	
 	//弹出轻提示
-	$(".btn2").on("click",function(){
-		 $("#toast").show()
-		 timer = window.setTimeout(function(){
-		   $("#toast").hide()
+	$(".btn2").on("click",function(){		
+		 var  $toast = $("#toast")
+		 if ($toast.css('display') != 'none') return;		
+		 $toast.fadeIn(100)
+		 setTimeout(function(){
+		   $toast.fadeOut(100)
 		 },2000)
 	})
 	
@@ -25,8 +28,7 @@ a.btn2{
   border-radius: 5px;
   color: #fff;
   background-color: #f30;
-}	
-	
+}		
 	
 /*轻提示*/
 .toast-mask {
