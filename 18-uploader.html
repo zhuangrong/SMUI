@@ -45,7 +45,7 @@
 	height: 100%;
 	opacity: 0;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}	
+	}	
 </style>
 
 
@@ -64,19 +64,15 @@
 <script>
 $(function(){
 	  //图片上传-单张
-		var $uploaderFile = $("#uploader-file"),
+		var tmpl = '<li style="background-image:url(#url#)"></li>',
+				$uploaderFile = $("#uploader-file"),
 				$uploaderPic = $("#uploader-pic")
 
 		$uploaderFile.on("change", function(e){
-				var file = this.files[0];
-				var r = new FileReader();
-				r.readAsDataURL(file);
-			  $(r).load(function() {
+				var src, url = window.URL || window.webkitURL || window.mozURL, files = e.target.files;				
+						src = url.createObjectURL(files[0]);						
 						$(".uploader-file").css({"opacity":"0"}); 
-						$uploaderPic.html('<li style="background-image:url('+ this.result +')"></li>');
-				})
-				
-							
+						$uploaderPic.html($(tmpl.replace('#url#', src)));				
 		});
 	  
 });
