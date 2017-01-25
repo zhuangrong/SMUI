@@ -78,6 +78,7 @@ body {
 	color: #bbb;
 }
 .wrap,
+.form2,
 .form,
 .avatar-wrap2,
 .avatar-wrap{
@@ -86,6 +87,7 @@ body {
 }
 .wrap:before,
 .wrap:after,
+.form2:before,
 .form:before,
 .avatar-wrap2:after,
 .avatar-wrap2:before,

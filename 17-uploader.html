@@ -1,0 +1,94 @@
+<!--
+  * uploader.html
+	* 图片上传
+	* 触发键:17
+-->
+<style>
+/*上传多张图片*/
+.uploader-wrap{
+	background-color: #fff;
+	padding: 10px;
+	overflow: hidden;
+}
+.uploader-pic li{
+	position: relative;
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 0 5px 10px;
+	background-color: #ccc;
+}
+.uploader-pic li i{
+	content: "";	
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 22px;
+	height: 22px;
+	background-image: url(images/del.png);	
+}
+	
+.uploader-file {
+	position: relative;
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 0 5px;
+	border: 1px solid #D9D9D9;
+	background-image: url(images/icon-plus.png);
+	background-size: 25px !important;	
+}
+.uploader-file input[type=file]{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}	
+</style>
+
+
+<h1 class="title">图片上传-多张2<span>#17a</span></h1>
+
+<!----------------------图片上传#17-------------------->
+<div class="uploader-wrap">
+	<ul class="uploader-pic" id="uploader-pic">
+			<li style="background-image:url(images/avatar.png)"><i class="del"></i></li>
+	</ul>
+	<div class="uploader-file">
+			<input id="uploader-file" type="file" accept="image/*" />
+	</div>
+</div>
+
+<script>
+$(function(){
+	  //图片上传
+		var tmpl = '<li style="background-image:url(#url#)"><i class="del"></i></li>',
+				$uploaderFile = $("#uploader-file"),
+				$uploaderPic = $("#uploader-pic")
+
+		$uploaderFile.on("change", function(e){
+				var src, url = window.URL || window.webkitURL || window.mozURL, files = e.target.files;
+				for (var i = 0, len = files.length; i < len; ++i) {
+						var file = files[i];
+
+						if (url) {
+								src = url.createObjectURL(file);
+						} else {
+								src = e.target.result;
+						}
+
+						$uploaderPic.append($(tmpl.replace('#url#', src)));
+				}
+		});
+	  //删除
+		$(document).on("click", ".del", function(){
+			 $(this).parent().remove();
+		})
+	  
+});
+</script>

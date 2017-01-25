@@ -1,0 +1,107 @@
+<!--
+  * form-input.html
+	* 表单-输入
+	* 触发键:3
+-->
+
+<style>
+/*表单左右#3a*/
+.form li {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	/*子元素垂直居中*/
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	padding: 5px 10px;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+.form li span{
+	width:88px;	
+}
+.form li input[type=text]{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;	
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 10px;
+	border:none;	
+}
+.form button {
+	background-color: rgba(66,122,236,1.00);
+	width: 80px;
+	height: 32px;
+	margin: 0px 10px;	
+	border-radius: 5px;
+	color: #fff;
+}
+	
+/*表单左右#3b*/	
+.form2 {
+	background-color: #fff;
+}
+.form2 li {
+	padding: 10px 10px;
+	border-bottom: 1px solid  #ddd;
+}
+.form2 li label{
+	display: block;
+	padding-bottom: 5px;
+}
+.form2 li input[type=text]{
+	width: 100%;
+	line-height: 2.3;
+}
+.form2 li textarea{
+	display: block;
+	border: 0;
+	resize: none;
+	width: 100%;
+	color: inherit;
+	font-size: 1em;
+	line-height: inherit;
+	outline: 0;
+}	
+</style>
+
+<h1 class="title">文字+输入=左右<span>#3a</span></h1>
+<!----------------------输入#3a-------------------->
+<div class="form">
+	<ul>
+		<li>
+			<span>姓名</span>
+			<input type="text" placeholder="请输入姓名">
+		</li>
+		<li>
+			<span>详细地址</span>
+			<input type="text" placeholder="请输入地址">
+		</li>
+	</ul>
+</div>
+
+<h1 class="title">文字+输入=上下<span>#3b</span></h1>
+<!----------------------输入#3b-------------------->
+<div class="form2">
+	<ul>
+		<li>
+			<label>文本框</label>
+			<input type="text" placeholder="请输入文本">
+		</li>
+		<li>
+			<label>文本域</label>
+			<textarea class="texta" placeholder="请输入文本" rows="3"></textarea>
+		</li>
+	</ul>
+</div>
+
+
+
+
+
+
+
+
