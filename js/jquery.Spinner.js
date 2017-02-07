@@ -1,5 +1,4 @@
 
-
 (function($) {
 	
 	$.fn.Spinner = function (opts) {
@@ -11,7 +10,7 @@
 		
 			var a = $('<a></a>'); f(a,0,"Decrease","-");	//加
 			var c = $('<a></a>'); f(c,0,"Increase","+");	//减
-			var b = $('<input/>');f(b,1,"Amount");cv(0);	//值
+			var b = $('<input/>');f(b,1,"Amount");cv(1);	//值
 			
 			$(this).append(a).append(b).append(c);
 			a.click(function(){cv(-1)});

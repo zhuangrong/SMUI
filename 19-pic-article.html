@@ -1,0 +1,49 @@
+<!--
+  * 19-pic-article.html
+	* 产品图文列表
+	* 触发键:19
+-->
+
+<style>
+/*图文列表*/
+.pic-article{
+	display: -webkit-box; 
+	display: -webkit-flex;
+	display: flex;
+	padding: 10px;
+	background-color: #fff;
+	border-bottom: 1px solid  #f2f2f2;
+}
+.pic-article .pic{
+	max-width: 90px;
+	max-height: 60px;
+}
+.pic-article .info{
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+  flex:1;
+	padding: 0 0 0 15px;
+}
+.pic-article .info p:last-child em{
+	float: right;
+	font-size: 14px;
+	color: #aaa;
+}
+</style>
+
+
+<!----------------------图文列表#19-------------------->
+
+<div class="pic-article">
+	<div class="pic">
+		<img src="images/pic.png">
+	</div>
+	<div class="info">
+		<h3>名胜古迹故宫</h3>
+		<p>中国-北京</p>
+		<p>
+			2016-10-11 17:58 <em>喜欢</em>
+		</p>
+	</div>
+</div>
+

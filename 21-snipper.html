@@ -1,0 +1,68 @@
+<!--
+  * snipper.html
+	* 数量加减
+	* 触发键:21
+-->
+<script src="js/jquery.Spinner.js"></script> 
+<script>
+$(function(){
+	/***Spinner***/
+	$(".spinner").Spinner();
+	
+	//总金额，如果有多个snipper存在，可以取点击对象的相邻节点或父节点的对象
+	$(document).on("click",".spinner a",function(){
+		$("#price").text('￥'+$(".spinner").find(".Amount").val()*2000);/*个数乘以单价*/
+	})
+	/*多个组件同时存在
+   * 	$(document).on("click",".spinner a",function(){
+   * 	  $(this).parent().next().text('￥'+$(this).parent().find(".Amount").val()*2000);
+   * 	})
+	*/
+});
+</script>
+<style>
+/*spinner数量加减*/
+.spinner{
+	overflow: hidden;
+}
+.spinner a{
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	text-indent: 999px;
+	vertical-align: middle;
+	margin: 0 0 0.3rem;
+}
+.spinner a.DisDe,
+.spinner a.Decrease{
+	background-image: url(images/icon-decrease.png)
+}
+.spinner a.Increase{
+	background-image: url(images/icon-increase.png)
+}
+.spinner input{
+	display: inline-block;
+	width: 38px;
+	height: 19px;
+	margin: 0 5px;
+	text-align: center;
+	color: #808080;
+	background-color: #fff;
+	border-radius: 10px;
+	border: 1px solid  #b3b3b3;
+}
+</style>
+
+<h1 class="title">数量加减<span>#21</span></h1>
+<div class="wrap">
+
+	<!----------------------数量加减#21-------------------->
+	<div class="spinner"></div>
+	<span id="price">￥2000</span>
+	
+</div>
+
+
+
+
+

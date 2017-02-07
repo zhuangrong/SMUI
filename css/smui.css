@@ -59,7 +59,9 @@ button {
 	border: none;
 	outline: 0;
 }
-
+em,h3{
+	font:inherit
+}
 /**************外框**************/
 body {
 	background-color: #f2f2f2;
@@ -129,6 +131,7 @@ body {
 #scroller li{
 	padding: 5px 10px;
 	border-bottom: 1px solid  #ddd;	
+	font-family: fantasy;
 }
 
 

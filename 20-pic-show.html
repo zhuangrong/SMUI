@@ -1,0 +1,50 @@
+<!--
+  * 20-pic-show.html
+	* 图片并排
+	* 触发键:20
+-->
+
+<style>
+/*图片并排*/
+.pic-show{
+	padding: 15px;
+}
+.pic-show ul{
+	display: -webkit-box; 
+	display: -webkit-flex;
+	display: flex;	
+}
+.pic-show li{
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+  flex:1;
+	margin: 5px 10px;
+	text-align:center;
+	font-size: 13px;
+	background-color: #ccc;
+}
+.pic-show li p{
+	padding: 5px 0 0;
+}
+</style>
+
+
+<!----------------------图片并排#20-------------------->
+
+<div class="pic-show">
+	<ul>
+		<li>
+			<img src="images/pic.png" alt="">
+			<p>北京-故宫</p>
+		</li>
+		<li>
+			<img src="images/pic.png" alt="">
+			<p>北京-故宫</p>
+		</li>
+		<li>
+			<img src="images/pic.png" alt="">
+			<p>北京-故宫</p>
+		</li>
+	</ul>
+</div>
+
