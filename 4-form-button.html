@@ -20,6 +20,10 @@
 	color: #fff;
 	background-color: #f60;
 }
+.btn[disabled]{
+	color: rgba(255,255,255,0.6);
+	background-color: #bababa;
+}
 /*长按钮 a标签*/
 a.btn2{
 	display: block;
@@ -32,11 +36,13 @@ a.btn2{
   background-color: #f30;
 }
 
+	
 </style>
 <h1 class="title">小按钮<span>#4a</span></h1>
 <div class="wrap">
 	<!----------------------按钮#4a-------------------->
 	<button class="btn">小按钮</button>
+	<button class="btn" disabled>禁用</button>
 </div>
 
 

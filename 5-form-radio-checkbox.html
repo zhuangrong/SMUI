@@ -17,6 +17,7 @@
 .radio:checked{
 	background-position: 0 -22px;
 	}
+	
 /*多选框*/
 .checkbox{
 	width: 22px;
@@ -28,6 +29,52 @@
 }
 .checkbox:checked{
 	background-position: 0 -22px;
+}
+	
+/*切换*/	
+.switch{
+    position: relative;
+    width: 52px;
+    height: 32px;
+    border: 1px solid #DFDFDF;
+    outline: 0;
+    border-radius: 16px;
+    background-color: #78BB05;
+    -webkit-transition: background-color 0.1s, border 0.1s;
+    transition: background-color 0.1s, border 0.1s;
+}
+.switch:checked:before{
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.switch:checked:after{
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+}
+.switch:before, .switch-cp__box:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #FDFDFD;
+    -webkit-transition: -webkit-transform 0.3s linear;
+    transition: -webkit-transform 0.3s linear;
+}
+.switch:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    -webkit-transition: -webkit-transform 0.3s linear;
+    transition: -webkit-transform 0.3 linear;
 }
 </style>
 <h1 class="title">单选框<span>#5a</span></h1>
@@ -42,4 +89,10 @@
 	<!----------------------多选框#5b-------------------->
 	<label><input type="checkbox" name="" class="checkbox" checked>option1</label>
 	<label><input type="checkbox" name="" class="checkbox">option2</label>
+</div>
+
+<h1 class="title">切换<span>#5c</span></h1>
+<div class="wrap radio-checkbox">
+	<!----------------------切换#5c-------------------->
+	<input class="switch" type="checkbox">
 </div>

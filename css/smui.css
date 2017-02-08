@@ -24,7 +24,7 @@ li {
 	-webkit-user-select: none;
 }
 a {
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 	background-color: transparent;
 	-webkit-tap-highlight-color: transparent;
@@ -62,6 +62,7 @@ button {
 em,h3{
 	font:inherit
 }
+
 /**************外框**************/
 body {
 	background-color: #f2f2f2;
