@@ -1,0 +1,120 @@
+
+<!--
+  * filter.html
+	* 过滤排序
+	* 触发键:22
+-->
+
+<style>
+/*过滤排序*/
+.filter{
+		position: relative;
+		z-index: 999999;
+}
+.filter-tab ul{
+	display: -webkit-box; 
+	display: -webkit-flex;
+	display: flex;
+	border-bottom: 1px solid  #ddd;
+}
+.filter-tab li{
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+  flex:1;
+	height:40px;
+	line-height: 40px;
+	text-align:center;
+	color: #000;
+	background-color: #fff;
+}
+.filter-tab li.curr{
+	color: #ff4683;
+	background-color: #eee;
+}
+.filter-tab li:after{
+    content: '';
+    display: inline-block;
+    margin-left: 7px;
+    margin-bottom: 3px;
+    width: 6px;
+    height: 6px;
+    border-bottom: 1px solid #666;
+    border-left: 1px solid #666;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+.filter-tab li.curr:after {
+    border-color: #ff4683;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin-bottom: 0;
+}
+.filter div[class*="tab-box"] > div{
+	background-color: #fff;
+	display:none
+}
+.mask {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+</style>
+
+
+<!----------------------过滤排序#22-------------------->
+<section class="filter">
+	<div class="filter-tab" id="tabs">
+		<ul>
+			<li>美食</li>
+			<li>全城</li>
+			<li>默认排序</li>
+			<li>筛选</li>
+		</ul>
+	</div>
+	<div class="tab-box1">
+		<div>美食</div>
+		<div>全城</div>
+		<div>默认排序</div>
+		<div>筛选</div>
+	</div>	
+</section>
+<div class="mask" style="display: none"></div>
+
+<script>
+/*tabs+filter切换组件*/
+$.Filter = function(obj,num){
+  //如果点击链接或按钮重新加载页面
+	$("li","#" + obj).each(function(index){
+		$(this).click(function(i){
+			if($(this).hasClass("curr")){
+				$(this).removeClass("curr")
+				$("div.tab-box" + num + " > div").hide()
+				$(".mask").fadeOut(200)	
+			}else{
+				$("div.tab-box" + num + " > div").eq(index).show().siblings().hide()
+				$(this).addClass("curr").siblings().removeClass("curr")
+				$(".mask").fadeIn(200)
+			}
+		})
+	})
+}
+$(function(){
+	//切换条件
+	$.Filter("tabs",1)	
+	//点击遮罩层隐藏
+	$(".mask").on("click",function(e){
+		e.stopPropagation()	
+		$(".mask").fadeOut(200)	
+		$("div.tab-box1 > div").hide()
+		$("#tabs li").removeClass("curr")
+	})
+	
+})
+</script>
+

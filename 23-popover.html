@@ -1,0 +1,112 @@
+<!--
+  * popover.html
+	* 气泡层
+	* 触发键:23
+-->
+<script>
+$(function(){
+	//点击+号弹出气泡层
+	$(".share").on("click",function(){		 
+		 $(".mask").fadeIn(300)
+		 $(".popover").fadeIn(200)	 
+	})
+	
+	//点击遮罩层隐藏
+	$(".mask, .popover li").on("click",function(e){
+			e.stopPropagation()
+			$(".mask").fadeOut(300)
+		  $(".popover").fadeOut(200)		
+	})
+	
+})
+</script>
+<style>
+/*标题栏-临时*/
+.header{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	justify-content: center;
+	height: 44px;
+	padding-left: 30px;
+	color: #fff;
+	background-color: #D70000;
+}
+.header span{
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+  flex:1;
+	text-align: center;
+}
+
+.header .share{ /*用于文字*/
+	word-break: keep-all;
+  white-space: nowrap;
+	padding-right: 12px;
+	color: #fff;
+	font-size: 25px;
+}	
+	
+/*气泡层*/
+.popover{
+	position: absolute;
+	top: 53px;
+	right: 5px;
+	z-index: 99999;
+	padding: 5px 0;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 1px solid  #ccc;
+	display: none;
+}
+.popover li{
+	border-bottom: 1px solid  #ddd;
+	padding: 5px 15px;
+}
+.popover li:active{
+	background-color: #eee;
+}
+.popover:after {
+	content: ' ';
+	position: absolute;
+	top: -6px;
+	right: 10px;
+	width: 10px;
+	height: 10px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-bottom: 0;
+	border-right: 0;
+	background-color: #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	z-index: 0;
+}	
+.mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, .55);
+	display: none;
+}
+</style>
+
+<div class="header">
+	<span>标题</span>
+	<a class="share" href="#">+</a>
+</div>
+
+<!----------------------气泡层#23-------------------->
+<div class="popover">
+	<ul>
+		<li>添加好友</li>
+		<li>扫一扫</li>
+		<li>发送邮件</li>
+	</ul>
+</div>
+<div class="mask"></div>
