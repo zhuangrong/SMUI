@@ -1,0 +1,37 @@
+@import "../base/fn";
+
+/*小按钮*/
+.btn{
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	padding:0 15px;
+	margin:0 auto;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;	
+	overflow: hidden;
+	color: #fff;
+	background-color: $colorPrimary;
+}
+.btn[disabled]{
+	color: rgba(255,255,255,0.6) !important;
+	background-color: #bababa !important;
+}
+/*长按钮 a标签*/
+a.btn2{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+  margin:0 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #f30;
+}
+
+
+
+
+

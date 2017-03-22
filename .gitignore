@@ -47,3 +47,5 @@ Temporary Items
 .apdisk
 *.psd
 *.docx
+
+/node_modules/*
