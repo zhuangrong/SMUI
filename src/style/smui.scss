@@ -1,13 +1,12 @@
 
 body{
   color: #00f;
-  font-size: 32px;
 }
 /*global*/
-/*@import "base/global";*/
+@import "base/global";
 
 /*icon font*/
-/*@import "icon/icon-font";*/
+@import "icon/icon-font";
 
 /*组件-button*/
 @import "widget/button";

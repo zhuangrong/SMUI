@@ -49,3 +49,4 @@ Temporary Items
 *.docx
 
 /node_modules/*
+/output/*
