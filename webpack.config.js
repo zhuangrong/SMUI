@@ -1,18 +1,18 @@
 // nodejs 中的path模块
-var webpack = require('webpack');
+
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-    // 入口文件，path.resolve()方法，可以结合我们给定的两个参数最后生成绝对路径，最终指向的就是我们的index.js文件
+    
     entry: path.resolve(__dirname, './src/index.js'),
     // 输出配置
     output: {
-        // 输出路径是 myProject/output/static
-        path: path.resolve(__dirname, './output/static'),
-        publicPath: 'static/',
-        filename: '[name].js'
+        
+        path: path.resolve(__dirname, './css'),
+        publicPath: 'css/',
+        filename: 'smui.js'
     },
     devtool: "source-map", 
     module: {
@@ -34,21 +34,10 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            filename: '../index.html',
+            filename: '../index-webpack.html',
             template: path.resolve(__dirname, 'src/index.html'),
             inject: true
         }),
-        new ExtractTextPlugin("[name].css"),
-      
-        new webpack.HotModuleReplacementPlugin() //热加载
-      
-    ],
-    //使用webpack-dev-server，提高开发效率
-    devServer: {
-      contentBase: './output',
-      host: '192.168.95.1',
-      port: 9090,
-      inline: true,
-      hot: true,
-    }
+        new ExtractTextPlugin("smui.css")
+    ]
 }

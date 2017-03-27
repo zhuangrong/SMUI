@@ -11,7 +11,8 @@
 <script>
 $(function(){
 	//获取url中的随机值
-	var url = $.getUrlParam('url');	
+	var url = "./src/fragment/" +  $.getUrlParam('url');	
+  console.log(url);
 	$.ajax({
 		url: url + ".html",
 		success:function(res){
@@ -30,6 +31,7 @@ $(function(){
 </script>
 </head>
 <body>
+<div class="btn">6</div>
 <div id="component"></div>
 <!--
   * 组件列表
@@ -53,5 +55,6 @@ $(function(){
   * toFIX:
   
 -->
+<script type="text/javascript" src="static/main.js"></script></body>
 </body>
 </html>
