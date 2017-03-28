@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes">
+<title>无标题文档</title>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script>
+$(function(){
+  //对话框
+	$(".btn").on("click",function(){
+		 $("#dialog").fadeIn(200)
+	})
+	
+	//点击遮罩层隐藏
+	$(".mask").on("click",function(e){
+			e.stopPropagation()
+			 $("#dialog").fadeOut(200)		 
+	})
+})
+</script>
+<link href="css/smui.css" rel="stylesheet"></head>
+
+<body>
+<ul> 
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+  <li>字体</li>
+</ul>
+<div class="box1">box1</div>
+<div class="btn">弹出框</div>
+<!----------------------对话框#15-------------------->
+<div id="dialog" style=" display: none">
+	<div class="mask"></div>
+	<div class="dialog">
+		<div class="dialog-header">标题</div>
+		<div class="dialog-body">对话框内容区域对话框内容区域对话框内容区域对话框内容区域</div>
+		<div class="dialog-footer">
+			<button class="btn">按钮1</button>
+			<button class="btn">按钮2</button>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="css/smui.js"></script></body>
+</html>

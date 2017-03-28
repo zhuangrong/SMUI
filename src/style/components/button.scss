@@ -1,37 +1,83 @@
 @import "../base/fn";
 
-/*小按钮*/
-.btn{
-	display: inline-block;
-	width: 188px;
-	height: 38px;
-	line-height: 40px;
-	padding:0 15px;
-	margin:0 auto;
-	text-align: center;
-	text-decoration: none;
-	border-radius: 5px;	
-	overflow: hidden;
-	color: #fff;
-	background-color: $colorPrimary;
-}
-.btn[disabled]{
-	color: rgba(255,255,255,0.6) !important;
-	background-color: #bababa !important;
-}
-/*长按钮 a标签*/
-a.btn2{
-	display: block;
-	height: 40px;
-	line-height: 40px;
-  margin:0 10px;
+.sm-btn{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: $btnFontSize;
   text-align: center;
-  border-radius: 5px;
-  color: #fff;
-  background-color: #ff0;
+  text-decoration: none;
+  color: $btnFontColor;
+  line-height: $btnHeight/$btnFontSize;
+  border-radius: $btnBorderRadius;
+  &:active{
+    color: $btnActiveFontColor;
+  }
 }
 
+//主按钮
+.sm-btn.primary{
+  background-color: $btnPrimaryBg;
+  &:active{
+    background-color: $btnPrimaryActiveBg;
+  }
+}
+//警告按钮
+.sm-btn.warn{
+  background-color: $btnWarnBg;
+  &:active{
+    background-color: $btnWarnActiveBg;
+  }
+}
+//默认按钮
+.sm-btn.default{
+  color: $btnDefaultFontColor;
+  background-color: $btnDefaultBg;
+  border: 1px solid $btnDefaultBorderColor;
+  &:active{
+    color: $btnDefaultActiveFontColor;
+    background-color: $btnDefaultActiveBg;
+  }
+}
 
+//禁用
+.sm-btn.disabled{
+  color: $btnDisabledFontColor;
+  &.primary{
+    background-color: $btnPrimaryDisabledBg;
+  }
+  &.warn{
+    background-color: $btnWarnDisabledBg;
+  }
+  &.default{
+    color: $btnDefaultDisabledFontColor;
+    background-color: $btnDefaultDisabledBg;
+  }
+}
 
+//小按钮
+.sm-btn.mini{
+  display: inline-block;
+  padding: 0 1.32em;
+  line-height: $btnMiniHeight;
+  font-size: $btnMiniFontSize;
+}
 
-
+//兼容button标签
+button, input{
+  &.sm-btn {
+    width: 100%;
+    border-width: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    &:focus {
+        outline: 0;
+    }
+  }
+}
+//两个按钮垂直排列时间距
+.sm-btn + .sm-btn{
+  margin-top: 15px;
+}
