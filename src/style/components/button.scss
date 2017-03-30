@@ -42,9 +42,20 @@
   }
 }
 
+//白底-主按钮
+.sm-btn.plain-primary{
+  color: $btnPlainPrimaryColor;
+  border: 1px solid $btnPlainPrimaryBorderColor;
+  &:active{
+    color: $btnPlainPrimaryActiveColor;
+    border-color: $btnPlainPrimaryActiveBorderColor;
+  }
+}
+
 //禁用
 .sm-btn.disabled{
   color: $btnDisabledFontColor;
+  cursor: default;
   &.primary{
     background-color: $btnPrimaryDisabledBg;
   }
@@ -54,6 +65,10 @@
   &.default{
     color: $btnDefaultDisabledFontColor;
     background-color: $btnDefaultDisabledBg;
+  }
+  &.plain-primary{
+    color: $btnDefaultDisabledFontColor;
+    border-color: $btnDefaultBorderColor;
   }
 }
 
@@ -81,3 +96,6 @@ button, input{
 .sm-btn + .sm-btn{
   margin-top: 15px;
 }
+
+
+
