@@ -97,80 +97,6 @@ i {
   content: "\F1DB"; }
 
 /*组件-button*/
-body, html {
-  color: #000;
-  font-family: tahoma, 'Microsoft yahei', 'Hiragino Sans GB', 'Hiragino Sans GB W3', HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased; }
-
-html {
-  font-size: 16px; }
-
-body, div, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, a {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body, span, label, p, h1, h2, h3, h4, h5, h6, a, div, li, dt, dd, i, em, section, article, :after, :before, button, input, textarea {
-  background-repeat: no-repeat !important;
-  background-position: center center;
-  background-size: 100% !important; }
-
-li {
-  list-style: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none; }
-
-a {
-  color: #000;
-  text-decoration: none;
-  background-color: transparent;
-  -webkit-tap-highlight-color: transparent;
-  /*解决Safari 点击时 标签文本被选中，有底色*/
-  -webkit-user-select: none; }
-
-a:active, a:hover {
-  outline: 0;
-  text-decoration: none; }
-
-img {
-  max-width: 100% !important;
-  vertical-align: middle;
-  border: 0; }
-
-input, button, textarea {
-  font-family: inherit;
-  font-size: inherit;
-  -webkit-appearance: none;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  -webkit-tap-highlight-color: transparent;
-   -webkit-user-select: none;
-  border: none;
-  outline: 0; }
-
-input[type=text], textarea {
-  background-color: #fff; }
-
-button {
-  overflow: visible;
-  border: none;
-  outline: 0; }
-
-em, h3 {
-  font: inherit; }
-
-/*$colorWarn: #E64340;*/
-/*$linkColorDefault: #586C94;*/
-/*$bgColorDefault: #EFEFF4;
-$bgColorActive: #ECECEC;*/
-/*$lineColorLight: #E5E5E5;
-$lineColorDark: #BCBCBC;*/
-/*$textColorTitle: #000000;
-$textColorTips: #B2B2B2;
-$textColorWarn: @colorWarn;
-$textColorGray: #999999;
-*/
 .sm-btn {
   position: relative;
   display: block;
@@ -243,80 +169,6 @@ button.sm-btn, input.sm-btn {
   margin-top: 15px; }
 
 /*组件-dialog*/
-body, html {
-  color: #000;
-  font-family: tahoma, 'Microsoft yahei', 'Hiragino Sans GB', 'Hiragino Sans GB W3', HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased; }
-
-html {
-  font-size: 16px; }
-
-body, div, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, a {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body, span, label, p, h1, h2, h3, h4, h5, h6, a, div, li, dt, dd, i, em, section, article, :after, :before, button, input, textarea {
-  background-repeat: no-repeat !important;
-  background-position: center center;
-  background-size: 100% !important; }
-
-li {
-  list-style: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none; }
-
-a {
-  color: #000;
-  text-decoration: none;
-  background-color: transparent;
-  -webkit-tap-highlight-color: transparent;
-  /*解决Safari 点击时 标签文本被选中，有底色*/
-  -webkit-user-select: none; }
-
-a:active, a:hover {
-  outline: 0;
-  text-decoration: none; }
-
-img {
-  max-width: 100% !important;
-  vertical-align: middle;
-  border: 0; }
-
-input, button, textarea {
-  font-family: inherit;
-  font-size: inherit;
-  -webkit-appearance: none;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  -webkit-tap-highlight-color: transparent;
-   -webkit-user-select: none;
-  border: none;
-  outline: 0; }
-
-input[type=text], textarea {
-  background-color: #fff; }
-
-button {
-  overflow: visible;
-  border: none;
-  outline: 0; }
-
-em, h3 {
-  font: inherit; }
-
-/*$colorWarn: #E64340;*/
-/*$linkColorDefault: #586C94;*/
-/*$bgColorDefault: #EFEFF4;
-$bgColorActive: #ECECEC;*/
-/*$lineColorLight: #E5E5E5;
-$lineColorDark: #BCBCBC;*/
-/*$textColorTitle: #000000;
-$textColorTips: #B2B2B2;
-$textColorWarn: @colorWarn;
-$textColorGray: #999999;
-*/
 /*对话框15*/
 .dialog {
   position: fixed;
@@ -352,80 +204,6 @@ $textColorGray: #999999;
   display: flex; }
 
 /*组件-checkbox*/
-body, html {
-  color: #000;
-  font-family: tahoma, 'Microsoft yahei', 'Hiragino Sans GB', 'Hiragino Sans GB W3', HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased; }
-
-html {
-  font-size: 16px; }
-
-body, div, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, a {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body, span, label, p, h1, h2, h3, h4, h5, h6, a, div, li, dt, dd, i, em, section, article, :after, :before, button, input, textarea {
-  background-repeat: no-repeat !important;
-  background-position: center center;
-  background-size: 100% !important; }
-
-li {
-  list-style: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none; }
-
-a {
-  color: #000;
-  text-decoration: none;
-  background-color: transparent;
-  -webkit-tap-highlight-color: transparent;
-  /*解决Safari 点击时 标签文本被选中，有底色*/
-  -webkit-user-select: none; }
-
-a:active, a:hover {
-  outline: 0;
-  text-decoration: none; }
-
-img {
-  max-width: 100% !important;
-  vertical-align: middle;
-  border: 0; }
-
-input, button, textarea {
-  font-family: inherit;
-  font-size: inherit;
-  -webkit-appearance: none;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  -webkit-tap-highlight-color: transparent;
-   -webkit-user-select: none;
-  border: none;
-  outline: 0; }
-
-input[type=text], textarea {
-  background-color: #fff; }
-
-button {
-  overflow: visible;
-  border: none;
-  outline: 0; }
-
-em, h3 {
-  font: inherit; }
-
-/*$colorWarn: #E64340;*/
-/*$linkColorDefault: #586C94;*/
-/*$bgColorDefault: #EFEFF4;
-$bgColorActive: #ECECEC;*/
-/*$lineColorLight: #E5E5E5;
-$lineColorDark: #BCBCBC;*/
-/*$textColorTitle: #000000;
-$textColorTips: #B2B2B2;
-$textColorWarn: @colorWarn;
-$textColorGray: #999999;
-*/
 .sm-check-common, .sm-checkbox, .sm-radio {
   display: inline-block;
   vertical-align: middle;
@@ -456,80 +234,6 @@ $textColorGray: #999999;
   content: "\F1DB"; }
 
 /*组件-switch*/
-body, html {
-  color: #000;
-  font-family: tahoma, 'Microsoft yahei', 'Hiragino Sans GB', 'Hiragino Sans GB W3', HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased; }
-
-html {
-  font-size: 16px; }
-
-body, div, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, a {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body, span, label, p, h1, h2, h3, h4, h5, h6, a, div, li, dt, dd, i, em, section, article, :after, :before, button, input, textarea {
-  background-repeat: no-repeat !important;
-  background-position: center center;
-  background-size: 100% !important; }
-
-li {
-  list-style: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none; }
-
-a {
-  color: #000;
-  text-decoration: none;
-  background-color: transparent;
-  -webkit-tap-highlight-color: transparent;
-  /*解决Safari 点击时 标签文本被选中，有底色*/
-  -webkit-user-select: none; }
-
-a:active, a:hover {
-  outline: 0;
-  text-decoration: none; }
-
-img {
-  max-width: 100% !important;
-  vertical-align: middle;
-  border: 0; }
-
-input, button, textarea {
-  font-family: inherit;
-  font-size: inherit;
-  -webkit-appearance: none;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  -webkit-tap-highlight-color: transparent;
-   -webkit-user-select: none;
-  border: none;
-  outline: 0; }
-
-input[type=text], textarea {
-  background-color: #fff; }
-
-button {
-  overflow: visible;
-  border: none;
-  outline: 0; }
-
-em, h3 {
-  font: inherit; }
-
-/*$colorWarn: #E64340;*/
-/*$linkColorDefault: #586C94;*/
-/*$bgColorDefault: #EFEFF4;
-$bgColorActive: #ECECEC;*/
-/*$lineColorLight: #E5E5E5;
-$lineColorDark: #BCBCBC;*/
-/*$textColorTitle: #000000;
-$textColorTips: #B2B2B2;
-$textColorWarn: @colorWarn;
-$textColorGray: #999999;
-*/
 .sm-switch {
   position: relative;
   width: 52px;
@@ -568,6 +272,74 @@ $textColorGray: #999999;
     transform: scale(0); }
   .sm-switch:checked:after {
     transform: translateX(20px); }
+
+/*组件-list*/
+.sm-list-header {
+  margin-top: .77em;
+  margin-bottom: .3em;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #999;
+  font-size: 14px; }
+  .sm-list-header + .sm-list {
+    margin-top: 0; }
+
+.sm-list {
+  line-height: 44px;
+  margin-top: 20px;
+  font-size: 17px;
+  background-color: #fff;
+  border-top: 1px solid  #ddd;
+  border-bottom: 1px solid  #ddd; }
+
+.sm-list ul li .sm-list-cell {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 0 15px; }
+  .sm-list ul li .sm-list-cell:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #ddd; }
+  .sm-list ul li .sm-list-cell > div {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1; }
+  .sm-list ul li .sm-list-cell > span {
+    display: block;
+    text-align: right;
+    color: #999; }
+  .sm-list ul li .sm-list-cell > span:after {
+    content: " ";
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    border-width: 1px 1px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    margin-left: 5px;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0); }
+
+.sm-list ul li:first-child .sm-list-cell:before {
+  display: none; }
+
+.sm-list ul li:active {
+  background-color: #eee; }
+
+.sm-list ul li.nolink span:after {
+  display: none; }
+
+.sm-list ul li.nolink:active {
+  background-color: #fff; }
 
 /*遮罩层*/
 .mask {
