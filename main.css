@@ -1,0 +1,74 @@
+@charset "utf-8";
+html {
+	-webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+  font-size: 100px;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+body{
+  color: #000;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
+body, span, label, p, h1, h2, h3, h4, h5, h6, a, div, li, dt, dd, i, em, section, article, :after, :before, button, input, textarea {
+	background-repeat: no-repeat !important;
+  background-position: 0 0;
+	background-size: 100% !important;
+}
+a {
+	color: #00f;
+	text-decoration: none;
+	background-color: transparent;
+	-webkit-user-select: none;
+}
+img {
+	max-width: 100% !important;
+	border: 0;
+}
+input, button, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-appearance: none;
+	background-color: #fff;
+	background-repeat: no-repeat;
+  -webkit-user-select:none;
+	border:none;
+  outline:0;
+}
+button {
+	overflow:visible;
+	border: none;
+	outline: 0;
+}
+em,h3{
+  font:inherit;
+}
+
+/*内容*/
+.icon{
+  display: inline-block;
+	width: 22px;
+	height: 22px;	
+	vertical-align: middle;
+	background-image: url(images/checkbox.png);
+}
+
+.test{
+  background-color: #ccc;
+  font-size: 30px;
+  height: 100px;
+  background-image: url(images/checkbox.png)
+}
+
