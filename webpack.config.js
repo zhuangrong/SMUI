@@ -10,7 +10,7 @@ module.exports = {
     // 输出配置
     output: {
         
-        path: path.resolve(__dirname, './css'),
+        path: path.resolve(__dirname, './js'),
         publicPath: 'css/',
         filename: 'smui.js'
     },
@@ -38,6 +38,6 @@ module.exports = {
             template: path.resolve(__dirname, 'src/index.html'),
             inject: true
         }),
-        new ExtractTextPlugin("smui.css")
+        new ExtractTextPlugin("../css/smui.css")
     ]
 }

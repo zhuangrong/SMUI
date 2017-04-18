@@ -1,0 +1,49 @@
+
+//变量
+@import "variables";
+@import "custom";
+@import "mixins";
+
+//全局css
+@import "global";
+
+/********************图标********************/
+@import "icon/icon-font";
+
+/********************组件********************/
+/*button*/
+@import "components/button";
+/*dialog*/
+@import "components/dialog";
+/*checkbox*/
+@import "components/check";
+/*switch*/
+@import "components/switch";
+/*list*/
+@import "components/list";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*遮罩层*/
+//.mask {
+//	position: fixed;
+//	z-index: 999;
+//	top: 0;
+//	right: 0;
+//	left: 0;
+//	bottom: 0;
+//	background: rgba(0, 0, 0, 0.6);
+//}
+

@@ -20,10 +20,10 @@ li{
   list-style: none;
 }
 body{
-  color: #000;
+  color: $body-color;
   font-size: 16px;
   line-height: 1.6;
-  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+  font-family: "Microsoft yahei", -apple-system-font, "Helvetica Neue", sans-serif ;
 }
 body, span, label, p, a, div, li, dt, dd, i, em, section, article, :after, :before, button, input {
 	background-repeat: no-repeat;

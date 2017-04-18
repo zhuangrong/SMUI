@@ -1,2 +1,2 @@
 
-require('./style/smui.scss'); 
+require('./scss/smui.scss'); 

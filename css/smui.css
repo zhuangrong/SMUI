@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*global*/
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -21,10 +20,10 @@ li {
   list-style: none; }
 
 body {
-  color: #000;
+  color: #363636;
   font-size: 16px;
   line-height: 1.6;
-  font-family: -apple-system-font, "Helvetica Neue", sans-serif; }
+  font-family: "Microsoft yahei", -apple-system-font, "Helvetica Neue", sans-serif; }
 
 body, span, label, p, a, div, li, dt, dd, i, em, section, article, :after, :before, button, input {
   background-repeat: no-repeat;
@@ -56,7 +55,7 @@ input, button, textarea {
 em, h3 {
   font: inherit; }
 
-/*icon font*/
+/********************图标********************/
 @font-face {
   font-family: 'smui';
   src: url("data:application/octet-stream;base64,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") format("truetype");
@@ -89,60 +88,58 @@ i {
 .icon-circle-thin:before {
   content: "\F1DB"; }
 
-/*组件-button*/
+/********************组件********************/
+/*button*/
 .sm-btn {
   position: relative;
   display: block;
   margin: 0 auto;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 1em;
+  padding-right: 1em;
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  color: #fff;
   line-height: 2.55556;
+  border: 1px solid transparent;
   border-radius: 5px; }
-  .sm-btn:active {
-    color: rgba(255, 255, 255, 0.6); }
+  .sm-btn.disabled, .sm-btn:disabled {
+    background-color: #F7F7F7 !important;
+    color: rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important; }
 
 .sm-btn.primary {
-  background-color: #f60; }
-  .sm-btn.primary:active {
-    background-color: #CE5D11; }
+  color: #fff;
+  background-color: #008AD5;
+  border-color: #008AD5; }
+  .sm-btn.primary:active, .sm-btn.primary.active {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #0080c6;
+    border-color: #0080c6; }
 
-.sm-btn.warn {
-  background-color: #E64340; }
-  .sm-btn.warn:active {
-    background-color: #CE3C39; }
+.sm-btn.warning {
+  color: #fff;
+  background-color: #E64340;
+  border-color: #E64340; }
+  .sm-btn.warning:active, .sm-btn.warning.active {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #e43632;
+    border-color: #e43632; }
 
-.sm-btn.default {
-  color: #000;
-  background-color: #F8F8F8;
-  border: 1px solid rgba(0, 0, 0, 0.1); }
-  .sm-btn.default:active {
-    color: rgba(0, 0, 0, 0.6);
-    background-color: #DEDEDE; }
+.sm-btn.outline-primary {
+  color: #008AD5;
+  background-color: transparent;
+  border-color: #008AD5; }
+  .sm-btn.outline-primary:active, .sm-btn.outline-primary.active {
+    color: rgba(0, 138, 213, 0.6);
+    border-color: rgba(0, 138, 213, 0.6); }
 
-.sm-btn.plain-primary {
-  color: #ff6600;
-  border: 1px solid #ff6600; }
-  .sm-btn.plain-primary:active {
-    color: rgba(255, 102, 0, 0.6);
-    border-color: rgba(255, 102, 0, 0.6); }
-
-.sm-btn.disabled {
-  color: rgba(255, 255, 255, 0.6);
-  cursor: default; }
-  .sm-btn.disabled.primary {
-    background-color: #EEBC9E; }
-  .sm-btn.disabled.warn {
-    background-color: #EC8B88; }
-  .sm-btn.disabled.default {
-    color: rgba(0, 0, 0, 0.3);
-    background-color: #F7F7F7; }
-  .sm-btn.disabled.plain-primary {
-    color: rgba(0, 0, 0, 0.3);
-    border-color: rgba(0, 0, 0, 0.1); }
+.sm-btn.outline-secondary {
+  color: #363636;
+  background-color: transparent;
+  border-color: #363636; }
+  .sm-btn.outline-secondary:active, .sm-btn.outline-secondary.active {
+    color: rgba(54, 54, 54, 0.6);
+    border-color: rgba(54, 54, 54, 0.6); }
 
 .sm-btn.mini {
   display: inline-block;
@@ -161,7 +158,7 @@ button.sm-btn, input.sm-btn {
 .sm-btn + .sm-btn {
   margin-top: 15px; }
 
-/*组件-dialog*/
+/*dialog*/
 /*对话框15*/
 .dialog {
   position: fixed;
@@ -196,7 +193,7 @@ button.sm-btn, input.sm-btn {
   display: -webkit-flex;
   display: flex; }
 
-/*组件-checkbox*/
+/*checkbox*/
 .sm-check-common, .sm-checkbox, .sm-radio {
   display: inline-block;
   vertical-align: middle;
@@ -226,7 +223,7 @@ button.sm-btn, input.sm-btn {
 .sm-radio:before {
   content: "\F1DB"; }
 
-/*组件-switch*/
+/*switch*/
 .sm-switch {
   position: relative;
   width: 52px;
@@ -266,7 +263,7 @@ button.sm-btn, input.sm-btn {
   .sm-switch:checked:after {
     transform: translateX(20px); }
 
-/*组件-list*/
+/*list*/
 .sm-list-header {
   margin-top: .77em;
   margin-bottom: .3em;
@@ -335,13 +332,5 @@ button.sm-btn, input.sm-btn {
   background-color: #fff; }
 
 /*遮罩层*/
-.mask {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6); }
 
 /*# sourceMappingURL=smui.css.map*/

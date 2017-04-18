@@ -1,6 +1,6 @@
 
 body {
-	background-color: #f2f2f2;
+	background-color: #f8f8f8;
 }
 .page-padd{
   padding: 30px;
@@ -17,7 +17,8 @@ body {
 .title2{
   margin-top: 20px;
   padding: 10px 0 5px;
-  font-weight: bold;
+  font-size: 14px;
+  color: #888;
 }
 .wrap{
   position: relative;
