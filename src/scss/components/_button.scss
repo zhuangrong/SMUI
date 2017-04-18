@@ -38,7 +38,6 @@
   @include button-outline-variant($btn-secondary-color);
 }
 
-
 //小按钮
 .sm-btn.mini{
   display: inline-block;
@@ -46,12 +45,19 @@
   line-height: $btn-height-mini;
   font-size: $btn-font-size-mini;
 }
+//链接按钮
+.sm-btn.link{
+  display: inline-block;
+  padding: 0;
+  line-height: auto;
+  color: $link-color;
+}
 
 //兼容button标签
 button, input{
   &.sm-btn {
     width: 100%;
-    border-width: 0;
+    border-width: 1px;
     outline: 0;
     -webkit-appearance: none;
     &:focus {
