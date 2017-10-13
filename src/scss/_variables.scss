@@ -1,6 +1,8 @@
-//////////////////// 所有变量
+//所有变量
 
 // 基础颜色
+//
+//---------------------------------------------
 $white:           #fff !default;
 $black:           #000 !default;
 $blue:            #008AD5 !default;
@@ -29,18 +31,20 @@ $body-bg:             $white !default;
 $body-color:          $gray-dark !default;
 
 // 链接
-$link-color:            $brand-primary !default;
+$link-color:          $brand-primary !default;
 
 // components
 $border-radius:       5px !default;
 
 
 
-//////////////////////button
+//button
+//
+//-------------------------------------------------
 
 // 字体，高度，圆角
 $btn-height:                     46px !default;
-$btn-font-size:                  18px !default;
+$btn-font-size:                  16px !default;
 $btn-border-radius:              $border-radius !default;
 
 // 主要
@@ -67,14 +71,18 @@ $btn-height-mini:2.3;
 
 
 
-
 // 多选框，单选框变量
+//
+//-------------------------------------------------
 $checkedColor: #f60;
 $checkDefaultColor: #ccc;
 
 $checkFontSize: 23px;
 
 
-//开关
+// 开关
+//
+//-------------------------------------------------
+
 $switchHeight: 32px;
 $switchedColor: #78BB05;

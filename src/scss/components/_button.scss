@@ -33,7 +33,6 @@
 .sm-btn.outline-primary {
   @include button-outline-variant($btn-primary-bg);
 }
-
 .sm-btn.outline-secondary {
   @include button-outline-variant($btn-secondary-color);
 }
@@ -57,7 +56,6 @@
 button, input{
   &.sm-btn {
     width: 100%;
-    border-width: 1px;
     outline: 0;
     -webkit-appearance: none;
     &:focus {

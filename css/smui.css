@@ -155,7 +155,6 @@ i {
 
 button.sm-btn, input.sm-btn {
   width: 100%;
-  border-width: 1px;
   outline: 0;
   -webkit-appearance: none; }
   button.sm-btn:focus, input.sm-btn:focus {
